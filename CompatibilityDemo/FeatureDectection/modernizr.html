@@ -1,0 +1,308 @@
+﻿<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+ 
+    <!-- !CSS -->
+    <link href="css/html5reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <style>
+    canvas {position: absolute;top: 0;left: 0;}
+    #ohno { display: none; }
+    footer {bottom: 0;display: block;font-size: 0.9em;left: 0;margin: 0;padding: 0;position: fixed;width: 100%;}
+    </style>
+ 
+    <!-- !Modernizr -->
+    <script src="js/modernizr-2.0.js"></script>
+    <script src="js/jquery-1.5.2.min.js" type="text/javascript"></script>
+  
+    <script>
+
+        $(function () {
+            $("#thesong").attr("autostart", "false");
+            
+            // Use Modernizr for feature detection...
+            if (Modernizr.canvas && Modernizr.audio) {
+                
+                $.getScript("js/canvas.js", function () {
+                    $("<p>Credit Canvas Circles to Mark Embling - http://markembling.info/</p>").appendTo("#credit");
+                });
+
+            } else {
+
+                $("#ohno").css("display", "block");
+                $("#thesong").attr("autostart", "true");
+
+            };
+
+        });
+    </script>
+ 
+
+</head>
+ 
+<body>
+
+    <canvas id='canvas' width='600' height='600'></canvas>
+    <audio id='music'></audio>  
+  
+    <div id="ohno">
+        <center>
+        <h1>No Canvas here so....</h1><br>
+        <h1>The Hamster Dance</h1><br>
+        </center>
+
+        <p>
+
+        <center>
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/2.gif" width="60" height="70">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/3.gif" width="60" height="70">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/4.gif" width="53" height="74">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+        <img src="hamsters/1.gif" width="144" height="48">
+
+        <p>
+
+        <center>
+        <b>Robin Hood Theme (c) Disney Motion Pictures</b>
+        </center>
+
+        <p>
+
+        <center>
+        <embed
+            id="thesong"
+	        src="hamsters/webhamster.wav"
+	        align="baseline" 
+	        border="0" 
+	        width="47" 
+	        height="25"
+	        loop="true">
+        </center>
+
+    </div>
+
+    <footer id="credit"></footer>
+
+</body>
+ 
+</html>

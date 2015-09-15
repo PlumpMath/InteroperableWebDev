@@ -1,0 +1,51 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <title>Feature Detection Demo</title>
+    <style>
+    #container {position:absolute;top:35%;left:35%;}
+    a { margin:0; font:bold 100px/1em tahoma,sans-serif; text-align:center; }
+    </style>
+</head>
+ 
+<body>
+    
+    <div id="container">
+        <a id="baseLink" href="foo.html">Click Me</a>
+    </div>
+
+    <script>
+        var linkEle = document.getElementById("baseLink");
+
+        //if (navigator.userAgent.indexOf("MSIE") == -1) {
+                    // Check to see if addEventListener is supported...
+                    if (window.addEventListener) {
+
+                                linkEle.addEventListener("click", popMessage1, false);
+
+                                // If it's attachEvent, then it's IE8 and below and you need to bind it differently...
+                    } else if (window.attachEvent) {
+
+                                linkEle.attachEvent("onclick", popMessage2);
+
+                    } 
+      
+
+        function popMessage1(evt) {
+
+            alert("addEventListener was used.");
+            evt.preventDefault();
+
+        }
+
+        function popMessage2(evt) {
+
+            alert("attachEvent was used.");
+            evt.returnValue = false;
+
+        }
+    </script>
+
+</body>
+ 
+</html>
