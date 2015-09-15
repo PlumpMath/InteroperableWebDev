@@ -1,0 +1,2 @@
+# InteroperableWebDev
+How to build web sites that work well across various browsers versions and devices is always challenging for web developers. What's the best practices and strategy to develop cross-browser web sites that will work with the existing and future browsers. Tools for interoperability tests, cross-browser fundamentals, and tips and tricks on HTML5, CSS, JavaScript development will be illustrated.  Browser detection, UA sniffing, CSS prefix, and fallbacks will all be examined in the project. 
